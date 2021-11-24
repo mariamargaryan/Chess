@@ -1,0 +1,72 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+    justify-content: center;
+
+    display: flex;
+
+    overflow: hidden;
+
+    height: 100vh;
+    width: 100vw;
+
+    background: #1b1212;
+    user-select: none;
+
+    font-family: sans-serif;
+}
+
+span {
+    vertical-align: top;
+
+    font-size: 1.7vh;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.board {
+    align-self: center;
+
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+    display: grid;
+    
+    border: 10px solid #c49d80;
+}
+
+.checkbox {
+    width: 20px;
+    height: 20px;
+    margin: 20px;
+}
+
+.square {
+    display: flex;
+    overflow: hidden;
+    font-size: 32px;
+    font-weight: bold;
+    flex-direction: column;
+    align-items: center;
+}
+
+.square.black {
+    background: #8a5f3d;  
+}
+
+.square.white {
+    background: #f0dab5;   
+}
+
+#text {
+    size: 5px;
+    background-color: #ffffff;
+}
+
+span {
+    font-size:10px;
+    margin: 1px;
+}
